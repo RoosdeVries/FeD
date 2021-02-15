@@ -1,5 +1,17 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
+html {
+    background-color: black;
+    color: white;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: currentColor;
+}
