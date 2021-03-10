@@ -6,13 +6,23 @@
 }
 
 html {
-    font-family: Helvetica;
+    font-family: Proxima Nova;
 }
 
 header,
 footer {
     background-color: black;
     color: white;
+}
+
+body,
+p,
+a,
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
 }
 
 a,
@@ -29,3 +39,42 @@ main {
     background-color: white;
     color: black;
 }
+
+/*button homepage*/
+button {
+    background-color: #1DB954;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+}
+
+button:hover {
+    background-color: #1ED761;
+}
+
+/*formulier detailpagina*/
+label {
+    color: lightgray;
+}
+
+input,
+textarea {
+    background-color: white;
+    border-style: none;
+
+}
+
+.capitalized {
+    color: #1DB954;
+}
+
+/*https://stackoverflow.com/questions/44627641/media-query-for-iphone7?rq=1*/
+
+/* mobile first*/
+@media only screen and (min-width:414px) {}
+
+/* normal ipad size*/
+@media only screen and (min-width: 960px) {}
+
+/* macbook sized*/
+@media only screen and (min-width: 1200px) {}
