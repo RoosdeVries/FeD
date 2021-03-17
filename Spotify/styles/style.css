@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/*Spotify font*/
 html {
     font-family: Proxima Nova;
 }
@@ -20,9 +21,19 @@ p,
 a,
 ul,
 li {
-    margin: 0px;
-    padding: 0px;
+    margin: 0em;
+    padding: 0em;
     text-decoration: none;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: 800;
 }
 
 a,
@@ -35,6 +46,12 @@ li {
     list-style: none;
 }
 
+/*nav grid*/
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 main {
     background-color: white;
     color: black;
@@ -44,8 +61,11 @@ main {
 button {
     background-color: #1DB954;
     color: white;
-    border-radius: 20px;
+    border-radius: 50px;
     border-style: none;
+    padding: 1.5em 5em;
+    display: flex;
+    font-weight: 700;
 }
 
 button:hover {
@@ -53,6 +73,13 @@ button:hover {
 }
 
 /*formulier detailpagina*/
+
+#whitebutton {
+    background-color: white;
+    border-style: solid;
+    color: grey;
+}
+
 label {
     color: lightgray;
 }
@@ -64,17 +91,13 @@ textarea {
 
 }
 
+/*groene teksten*/
 .capitalized {
     color: #1DB954;
+    font-weight: 700;
 }
 
-/*https://stackoverflow.com/questions/44627641/media-query-for-iphone7?rq=1*/
-
-/* mobile first*/
-@media only screen and (min-width:414px) {}
-
-/* normal ipad size*/
-@media only screen and (min-width: 960px) {}
-
-/* macbook sized*/
-@media only screen and (min-width: 1200px) {}
+/* items centreren –– werkt niet */
+.welcome {
+    align-items: center;
+}
