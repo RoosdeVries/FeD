@@ -91,13 +91,28 @@ textarea {
 
 }
 
+/* items centreren –– werkt niet */
+#welcome {
+    margin: auto;
+    align-content: center;
+
+}
+
+#gradienthomepage {
+    background: linear-gradient(#AE6FA9, #020403)
+}
+
+#gradientdetailpage {
+    background: linear-gradient(#121D3D, #000000)
+}
+
 /*groene teksten*/
 .capitalized {
     color: #1DB954;
     font-weight: 700;
 }
 
-/* items centreren –– werkt niet */
-.welcome {
-    align-items: center;
+#iphone {
+    height: 25em;
+    width: 22em;
 }
