@@ -11,85 +11,196 @@
     <link href="styles/style.css" rel="stylesheet">
 </head>
 
+<!-- Start content -->
+<!-- Deel 1 // background color - black -->
+
 <body>
     <header>
-        <nav class="navigatie">
-            <a href="/index.html">
-                <img alt="Spotify logo" src="/images/spotifyLOGO.png" width="216" height="64">
-            </a>
-            <a href="/index.html">
-                <img alt="Profile pic" src="/images/whiteprofilepic.png" width="70" height="70">
-            </a>
-            <a href="/index.html">
-                <img alt="Menu" src="/images/menu.png" width="70" height="70">
-            </a>
+
+        <!-- Navigatie van de website -->
+        <!-- Hamburger menu schuift uit, hierop moet een transition + deg [degrees] -->
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html">
+                        <img alt="Spotify logo" src="./images/spotifyLOGO.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="/detailpagina.html">
+                        <img alt="Profile pic" src="./images/whiteprofilepic.png">
+                    </a>
+                    <a href="/index.html">
+                        <img alt="Menu" src="./images/menu.png">
+                    </a>
+                </li>
+            </ul>
         </nav>
 
 
-        <h1>Op zoek naar muziek?</h1>
-        <p> Luister nu naar de beste nieuwe releases.</p>
 
-        <button type="button"> Luister op Spotify.</button>
+        <section id="welcome">
+            <h1>Looking for new music?</h1>
+            <p> Start listening to the best new releases.</p>
+
+            <button> OPEN WEB PLAYER </button>
+        </section>
+
+        <section id="covers">
+            <!-- Deel 2 // background color - black -->
+            <!-- De twee clickable muziekafspeellijsten -->
+            <!-- Images moeten nog in CSS aangepast worden in plaats van hier -->
+
+            <article>
+
+                <a href="#"><img alt="cover1" src="./images/spotifycover1.png" width="200" height="200"></a>
+                <a href="#"> Song name </a>
+                <a href="#"> Artist name </a>
+                <a class="capitalized" href="#"> PLAY NOW </a>
+
+            </article>
+
+            <article>
+                <a href="#"><img alt="cover2" src="./images/spotifycover2.png" width="200" height="200"></a>
+                <a href="#"> Song name </a>
+                <p> Artist name </p>
+                <a class="capitalized" href="#"> PLAY NOW </a>
+
+            </article>
+
+            <article>
+                <a href="#"><img alt="cover3" src="./images/spotifycover2.png" width="200" height="200"></a>
+                <a href="#"> Song name </a>
+                <p> Artist name </p>
+                <a class="capitalized" href="#"> PLAY NOW </a>
+
+            </article>
+
+            <article>
+                <a href="#"><img alt="cover4" src="./images/spotifycover2.png" width="200" height="200"></a>
+                <a href="#"> Song name </a>
+                <p> Artist name </p>
+                <a class="capitalized" href="#"> PLAY NOW </a>
+
+            </article>
+
+            <article>
+                <a href="#"><img alt="cover5" src="./images/spotifycover2.png" width="200" height="200"></a>
+                <a href="#"> Song name </a>
+                <p> Artist name </p>
+                <a class="capitalized" href="#"> PLAY NOW </a>
+
+            </article>
+
+            <article>
+                <a href="#"><img alt="cover6" src="./images/spotifycover2.png" width="200" height="200"></a>
+                <a href="#"> Song name </a>
+                <p> Artist name </p>
+                <a class="capitalized" href="#"> PLAY NOW </a>
+
+            </article>
+
+        </section>
+
     </header>
-
-
     <main>
-        <section id="DB">
-            <button id="cover1"><img alt="cover1" src="/images/spotifycover1.png" width="200" height="200"></button>
-            <h3> DB </h3>
-            <p> playlist Roos de Vries</p>
-            <h4> NU AFSPELEN </h4>
+
+        <!-- Deel 3 // background color - white -->
+
+        <section id="whitespace">
+
+            <h2> Make the most out of Spotify</h2>
+            <h3> Manage your account</h3>
+            <p> Edit your profile, change your password and update your payment information </p>
+
+            <a class="capitalized" href="#"> MANAGE ACCOUNT</a>
+
+
+            <h3> Get our free app</h3>
+            <p> Seamlessly listen to music you love. Download the Spotify app for your computer.</p>
+
+            <a class="capitalized" href="#"> DOWNLOAD DESKTOP APP</a>
+
+            <h3> Listen on the web</h3>
+            <p> To play and share music without the app, all within your browser, go to <a href="http://play.spotify.com/"> play.spotify.com </a></p>
+
+            <a class="capitalized" href="#"> OPEN WEB PLAYER </a>
 
         </section>
-        <section id="TH">
-            <button id="cover2"><img alt="cover2" src="/images/spotifycover2.png" width="200" height="200"></button>
-            <h3> TH </h3>
-            <p> playlist Roos de Vries</p>
-            <h4> NU AFSPELEN </h4>
-        </section>
+
+
     </main>
 
-
-
-
-
+    <!-- Deel 4 // background color - white -->
+    <!-- Footer met alle linkjes + sociale media -->
     <footer>
-        <img alt="Spotify logo" src="/images/spotifyLOGO.png" width="216" height="64">
+        <img alt="Spotify logo" src="./images/spotifyLOGO.png" width="130" height="40">
 
-        <section id="Bedrijf">
-            <h5> Bedrijf </h5>
+        <section id="company">
+            <h3> Company </h3>
             <ul>
-                <li> <a href="#"> Info </a></li>
-                <li> <a href="#"> Vacatures </a></li>
+                <li> <a href="#"> About </a></li>
+                <li> <a href="#"> Jobs </a></li>
                 <li> <a href="#"> For the Record </a></li>
             </ul>
         </section>
 
 
-        <section id="Community's">
-            <h5> Community's </h5>
+        <section id="communities">
+            <h3> Communities </h3>
             <ul>
-                <li> <a href="#"> Artiestenservice </a></li>
-                <li> <a href="#"> Ontwikkelaars </a></li>
-                <li> <a href="#"> Advertising </a></li>
-                <li> <a href="#"> Investeerders </a></li>
-                <li> <a href="#"> Leveranciers </a></li>
+                <li> <a href="#"> For Artists </a></li>
+                <li> <a href="#"> Investors </a></li>
+                <li> <a href="#"> Vendors </a></li>
             </ul>
         </section>
 
-        <section id="links">
-            <h5> Handige links </h5>
+        <section id="usefullinks">
+            <h3> Useful links </h3>
             <ul>
-                <li> <a href="#"> Ondersteuning </a></li>
+                <li> <a href="#"> Support </a></li>
                 <li> <a href="#"> Web Player </a></li>
-                <li> <a href="#"> Gratis mobiele app </a></li>
+                <li> <a href="#"> Free Mobile App </a></li>
             </ul>
+        </section>
+
+        <section id="socials">
+
+            <a class="socialicons" href="/index.html">
+                <img alt="Insta logo" src="./images/instalogo.png" width="40" height="40">
+            </a>
+            <a class="socialicons" href="/index.html">
+                <img alt="Twitter logo" src="./images/twitterlogo.png" width="70" height="70">
+            </a>
+            <a class="socialicons" href="/index.html">
+                <img alt="Facebook" src="./images/facebooklogo.png" width="120" height="70">
+            </a>
+
+        </section>
+
+        <a href="/index.html">
+            <img src="images/instalogo.png" alt="wereldbol" width="50" length="50">
+        </a>
+        <p> © 2021 Spotify AB</p>
+
+        <section id="secondaryfooter">
+
+            <ul>
+                <li> <a href="#"> Legal </a></li>
+                <li> <a href="#"> Privacy Center </a></li>
+                <li> <a href="#"> Privacy Policy </a></li>
+                <li> <a href="#"> Cookies </a></li>
+                <li> <a href="#"> About Ads </a></li>
+                <li> <a href="#"> Additional CA Privacy Disclosures </a></li>
+
+
+            </ul>
+
         </section>
 
 
     </footer>
 
     <script src="scripts/script.js"></script>
-</body>
-
-</html>
+</body></html>

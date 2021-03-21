@@ -5,13 +5,153 @@
     box-sizing: border-box;
 }
 
+/*Spotify font*/
 html {
+    font-family: Proxima Nova;
+}
+
+header,
+footer {
     background-color: black;
     color: white;
+}
+
+
+body,
+p,
+ul,
+li {
+    margin: 0em;
+    padding: 0em;
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(#AE6FA9, #020403);
+    display: grid;
+    justify-items: center;
+}
+
+.detail-page header {
+    background: linear-gradient(#121D3D, #000000)
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: 800;
 }
 
 a,
 a:visited {
     text-decoration: none;
     color: currentColor;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    width: 100%;
+}
+
+nav img {
+    max-height: 100%;
+    max-width: 100%;
+    height: 2em;
+}
+
+
+
+main {
+    background-color: white;
+    color: black;
+}
+
+#covers {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1.5em;
+    padding: 1em;
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+#covers article {
+    display: grid;
+    grid-gap: .5em;
+    text-align: center;
+}
+
+/*button homepage*/
+button {
+    background-color: #1DB954;
+    color: white;
+    border-radius: 50px;
+    border-style: none;
+    padding: 1.5em 5em;
+    display: flex;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #1ED761;
+}
+
+/*formulier detailpagina*/
+
+.whitebutton {
+    background-color: white;
+    border-style: solid;
+    color: grey;
+}
+
+.whitebutton:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05, 1.05);
+}
+
+label {
+    color: lightgray;
+}
+
+input,
+textarea {
+    background-color: white;
+    border-style: none;
+
+}
+
+
+/*groene teksten*/
+.capitalized {
+    color: #1DB954;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+#iphone {
+    height: 25em;
+    width: 22em;
+}
+
+main,
+footer {
+    padding: 1em;
 }
