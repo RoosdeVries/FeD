@@ -1,22 +1,16 @@
-/* CSS Document */
+/* CSS Document –– stond al in het basic document */
 *,
 *::after,
 *::before {
     box-sizing: border-box;
 }
 
-/*Spotify font*/
+/* Spotify font –– nog inladen in de Spotify Map + backup font !! */
 html {
     font-family: Proxima Nova;
 }
 
-header,
-footer {
-    background-color: black;
-    color: white;
-}
-
-
+/* zorgt ervoor dat alle content vrijstaand en 'leeg' is */
 body,
 p,
 ul,
@@ -26,106 +20,251 @@ li {
     text-decoration: none;
 }
 
+/* zorgt ervoor dat 2/3 van de site een zwarte achtergrond heeft */
+header,
+footer {
+    background-color: black;
+    color: white;
+}
+
+/* voegt background gradient toe en centreerd de items */
 header {
     background: linear-gradient(#AE6FA9, #020403);
     display: grid;
     justify-items: center;
 }
 
-.detail-page header {
-    background: linear-gradient(#121D3D, #000000)
+/* juiste grootte & dikte */
+h1 {
+    font-size: 3em;
+    font-weight: 750;
 }
 
+/* alleen de eerste willen aanspreken –– lukt niet 
+p:nth-of-type(1) {
+    font-weight: 700;
+}
+*/
+
+/* juiste grootte & dikte */
 h2 {
     font-size: 2em;
     font-weight: 800;
 }
 
+/* juiste grootte & dikte */
 h3 {
     font-size: 1.3em;
     font-weight: 800;
 }
 
-a,
-a:visited {
-    text-decoration: none;
-    color: currentColor;
-}
-
+/* haalt ingebouwde text decoratie weg */
 li {
     list-style: none;
 }
 
+/*  */
 nav ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 1em;
-
 }
 
+/* zorgt ervoor dat de elementen 100% van het beeld gebruiken + dat ze naast elkaar komen te staan */
 nav {
     display: flex;
     background-color: black;
     width: 100%;
 }
 
+/* schaalt afbeeldingen en geeft ruimte aan de elementen */
 nav img {
     max-height: 100%;
     max-width: 100%;
     height: 2em;
 }
 
-
-
-main {
-    background-color: white;
-    color: black;
+/* haalt ingebouwde text decoratie weg */
+a {
+    text-decoration: none;
+    color: currentColor;
 }
 
-#covers {
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 1.5em;
-    padding: 1em;
-    overflow-x: scroll;
-    max-width: 100%;
-}
-
-#covers article {
-    display: grid;
-    grid-gap: .5em;
-    text-align: center;
-}
-
-/*button homepage*/
+/* call to action button homepage + styling buttons detailpagina */
 button {
     background-color: #1DB954;
     color: white;
-    border-radius: 50px;
+    border-radius: 3em;
     border-style: none;
     padding: 1.5em 5em;
     display: flex;
     font-weight: 700;
 }
 
+/* styling button wanneer je er overheen hovert */
 button:hover {
     background-color: #1ED761;
 }
 
-/*formulier detailpagina*/
+/* column grid formaat voor de 6 articles + scrollt mee */
+#playlists {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1.5em;
+    padding: 2.5em;
+    overflow-x: scroll;
+    max-width: 100%;
+}
 
+/*  */
+#playlists article {
+    display: grid;
+    grid-gap: 0.5em;
+    text-align: center;
+}
+
+.coverimage {
+    width: 12.5em;
+    height: 12.5em;
+}
+
+.songname {
+    font-weight: 650;
+    color: #939796;
+}
+
+.artist {
+    color: #C2C2C2;
+}
+
+/* geeft 1/3 de juiste achtergrond en tekst - kleur  */
+main {
+    background-color: white;
+    color: black;
+}
+
+/* groene hoofdletter teksten */
+.capitalized {
+    color: #1DB954;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding-top: 0.8em;
+    font-size: 0.8em;
+}
+
+/* de content van de kantlijn afhalen */
+main,
+footer {
+    padding: 1em;
+}
+
+/* FOOTER */
+
+/* Footer spotify logo */
+#footerlogo {
+    width: 6.5em;
+    height: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+/* Kleine grijze koppen in de footer */
+footer h3 {
+    color: grey;
+    font-size: .7em;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+}
+
+/* Linkjes naar andere pagina's */
+footer li {
+    padding: 0.9em;
+    padding-left: 0em;
+    font-weight: 500;
+}
+
+/* Maakt de tekst een andere kleur wanneer je hovert */
+footer li:hover {
+    color: #1ED761;
+}
+
+/* Creeërt 'wit' ruimte */
+#socials {
+    margin-top: 7em;
+}
+
+.socialicons {
+    width: 2em;
+    height: 2em;
+}
+
+#communities {
+    margin-top: 4em;
+}
+
+#usefullinks {
+    margin-top: 4em;
+}
+
+/* images met hover een andere image laten zien –– werkt niet 
+#instagram:hover {
+    background-image: url("instagramgreen.png");
+}
+
+#twitter:hover {
+    background-image: url("twittergreen.png");
+}
+
+#facebook:hover {
+    background-image: url("facebookgreen.png");
+}
+
+*/
+
+#world {
+    width: 1em;
+    height: 1em;
+}
+
+.greytext {
+    color: grey;
+    font-weight: 600;
+    font-size: 0.7em;
+}
+
+#secondaryfooter a {
+    font-weight: 400;
+    font-size: 0.7em;
+    color: grey;
+}
+
+
+/* DETAILPAGINA SPECIFIEK –– Personal Account */
+
+
+/* HEADER OP TWEEDE PAGINA –– background gradient */
+.detail-page header {
+    background: linear-gradient(#121D3D, #000000)
+}
+
+/*formulier detailpagina*/
 .whitebutton {
     background-color: white;
     border-style: solid;
     color: grey;
 }
 
+
+/* styling buttons wanneer je er overheen hovert + zoomt in */
 .whitebutton:hover {
     background-color: white;
     color: black;
     transform: scale(1.05, 1.05);
 }
+
+form {}
 
 label {
     color: lightgray;
@@ -135,23 +274,11 @@ input,
 textarea {
     background-color: white;
     border-style: none;
-
 }
 
 
-/*groene teksten*/
-.capitalized {
-    color: #1DB954;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-}
-
+/* Iphone afbeelding grootte  */
 #iphone {
     height: 25em;
     width: 22em;
-}
-
-main,
-footer {
-    padding: 1em;
 }

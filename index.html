@@ -8,17 +8,24 @@
 
     <title>Spotify</title>
 
+    <!-- Link naar CSS file -->
     <link href="styles/style.css" rel="stylesheet">
+
+    <!-- Spotify – Proxima Nova font -->
+    <link rel="stylesheet" href="https://use.typekit.net/kxq4kha.css">
 </head>
 
+
 <!-- Start content -->
-<!-- Deel 1 // background color - black -->
 
 <body>
+
+    <!-- Deel 1 // background color - black -->
+
     <header>
 
-        <!-- Navigatie van de website -->
-        <!-- Hamburger menu schuift uit, hierop moet een transition + deg [degrees] -->
+        <!-- Navigatie van de website, gemaakt met afbeeldingen -->
+
 
         <nav>
             <ul>
@@ -27,118 +34,111 @@
                         <img alt="Spotify logo" src="./images/spotifyLOGO.png">
                     </a>
                 </li>
+
                 <li>
                     <a href="/detailpagina.html">
                         <img alt="Profile pic" src="./images/whiteprofilepic.png">
                     </a>
+
+                    <!-- Hamburger menu –– schuift uit, hierop moet een transition + deg [degrees] -->
+
                     <a href="/index.html">
                         <img alt="Menu" src="./images/menu.png">
                     </a>
                 </li>
+
             </ul>
         </nav>
 
+        <!-- Hamburger menu –– schuift uit, hierop moet een transition + deg [degrees] -->
 
+        <h1> Looking for music? </h1>
+        <p> Start listening to the best new releases.</p>
 
-        <section id="welcome">
-            <h1>Looking for new music?</h1>
-            <p> Start listening to the best new releases.</p>
+        <button> OPEN WEB PLAYER </button>
 
-            <button> OPEN WEB PLAYER </button>
-        </section>
+        <!-- De zes clickable muziekafspeellijsten -->
+        <!-- Images moeten nog in CSS aangepast worden -->
 
-        <section id="covers">
-            <!-- Deel 2 // background color - black -->
-            <!-- De twee clickable muziekafspeellijsten -->
-            <!-- Images moeten nog in CSS aangepast worden in plaats van hier -->
+        <section id="playlists">
 
             <article>
-
-                <a href="#"><img alt="cover1" src="./images/spotifycover1.png" width="200" height="200"></a>
-                <a href="#"> Song name </a>
-                <a href="#"> Artist name </a>
+                <a href="#"><img class="coverimage" alt="cover1" src="./images/1tameimpala.jpg"></a>
+                <a class="songname" href="#"> Borderline </a>
+                <a class="artist" href="#"> Tame Impala </a>
                 <a class="capitalized" href="#"> PLAY NOW </a>
-
             </article>
 
             <article>
-                <a href="#"><img alt="cover2" src="./images/spotifycover2.png" width="200" height="200"></a>
-                <a href="#"> Song name </a>
-                <p> Artist name </p>
+                <a href="#"><img class="coverimage" alt="cover2" src="./images/2theneighbourhood.jpg"></a>
+                <a class="songname" href="#"> Stargazing </a>
+                <a class="artist" href="#"> The Neighbourhood </a>
                 <a class="capitalized" href="#"> PLAY NOW </a>
-
             </article>
 
             <article>
-                <a href="#"><img alt="cover3" src="./images/spotifycover2.png" width="200" height="200"></a>
-                <a href="#"> Song name </a>
-                <p> Artist name </p>
+                <a href="#"><img class="coverimage" alt="cover3" src="./images/3chaseatlantic.jpg"></a>
+                <a class="songname" href="#"> Moonlight </a>
+                <a class="artist" href="#"> Chase Atlantic </a>
                 <a class="capitalized" href="#"> PLAY NOW </a>
-
             </article>
 
             <article>
-                <a href="#"><img alt="cover4" src="./images/spotifycover2.png" width="200" height="200"></a>
-                <a href="#"> Song name </a>
-                <p> Artist name </p>
+                <a href="#"><img class="coverimage" alt="cover4" src="./images/4darci.jpg"></a>
+                <a class="songname" href="#"> Lights </a>
+                <a class="artist" href="#"> Darci </a>
                 <a class="capitalized" href="#"> PLAY NOW </a>
-
             </article>
 
             <article>
-                <a href="#"><img alt="cover5" src="./images/spotifycover2.png" width="200" height="200"></a>
-                <a href="#"> Song name </a>
-                <p> Artist name </p>
+                <a href="#"><img class="coverimage" alt="cover5" src="./images/5azealiabanks.jpg"></a>
+                <a class="songname" href="#"> Count Contessa </a>
+                <a class="artist" href="#"> Azealia Banks </a>
                 <a class="capitalized" href="#"> PLAY NOW </a>
-
             </article>
 
             <article>
-                <a href="#"><img alt="cover6" src="./images/spotifycover2.png" width="200" height="200"></a>
-                <a href="#"> Song name </a>
-                <p> Artist name </p>
+                <a href="#"><img class="coverimage" alt="cover6" src="./images/6ozzie.jpg"></a>
+                <a class="songname" href="#"> DHYB </a>
+                <a class="artist" href="#"> OZZIE </a>
                 <a class="capitalized" href="#"> PLAY NOW </a>
-
             </article>
 
         </section>
 
     </header>
+
+    <!-- Deel 2 // background color - white -->
+    <!-- class aangemaakt voor de dikgedrukte groene teksten -->
+
     <main>
 
-        <!-- Deel 3 // background color - white -->
+        <h2> Make the most out of Spotify</h2>
 
-        <section id="whitespace">
-
-            <h2> Make the most out of Spotify</h2>
-            <h3> Manage your account</h3>
-            <p> Edit your profile, change your password and update your payment information </p>
-
-            <a class="capitalized" href="#"> MANAGE ACCOUNT</a>
+        <h3> Manage your account</h3>
+        <p> Edit your profile, change your password and update your payment information </p>
+        <a class="capitalized" href="#"> MANAGE ACCOUNT</a>
 
 
-            <h3> Get our free app</h3>
-            <p> Seamlessly listen to music you love. Download the Spotify app for your computer.</p>
+        <h3> Get our free app</h3>
+        <p> Seamlessly listen to music you love. Download the Spotify app for your computer.</p>
+        <a class="capitalized" href="#"> DOWNLOAD DESKTOP APP</a>
 
-            <a class="capitalized" href="#"> DOWNLOAD DESKTOP APP</a>
-
-            <h3> Listen on the web</h3>
-            <p> To play and share music without the app, all within your browser, go to <a href="http://play.spotify.com/"> play.spotify.com </a></p>
-
-            <a class="capitalized" href="#"> OPEN WEB PLAYER </a>
-
-        </section>
-
+        <h3> Listen on the web</h3>
+        <p> To play and share music without the app, all within your browser, go to <a href="http://play.spotify.com/"> play.spotify.com </a></p>
+        <a class="capitalized" href="#"> OPEN WEB PLAYER </a>
 
     </main>
 
-    <!-- Deel 4 // background color - white -->
+
+    <!-- Deel 3 // background color - black -->
     <!-- Footer met alle linkjes + sociale media -->
+
     <footer>
-        <img alt="Spotify logo" src="./images/spotifyLOGO.png" width="130" height="40">
+        <img id="footerlogo" alt="Spotify logo" src="./images/spotifyLOGO.png">
 
         <section id="company">
-            <h3> Company </h3>
+            <h3> COMPANY </h3>
             <ul>
                 <li> <a href="#"> About </a></li>
                 <li> <a href="#"> Jobs </a></li>
@@ -148,7 +148,7 @@
 
 
         <section id="communities">
-            <h3> Communities </h3>
+            <h3> COMMUNITIES </h3>
             <ul>
                 <li> <a href="#"> For Artists </a></li>
                 <li> <a href="#"> Investors </a></li>
@@ -157,7 +157,7 @@
         </section>
 
         <section id="usefullinks">
-            <h3> Useful links </h3>
+            <h3> USEFUL LINKS </h3>
             <ul>
                 <li> <a href="#"> Support </a></li>
                 <li> <a href="#"> Web Player </a></li>
@@ -168,22 +168,24 @@
         <section id="socials">
 
             <a class="socialicons" href="/index.html">
-                <img alt="Insta logo" src="./images/instalogo.png" width="40" height="40">
+                <img id="instagram" alt="Insta logo" src="./images/instagram.png">
             </a>
             <a class="socialicons" href="/index.html">
-                <img alt="Twitter logo" src="./images/twitterlogo.png" width="70" height="70">
+                <img id="twitter" alt="Twitter logo" src="./images/twitter.png">
             </a>
             <a class="socialicons" href="/index.html">
-                <img alt="Facebook" src="./images/facebooklogo.png" width="120" height="70">
+                <img id="facebook" alt="Facebook" src="./images/facebook.png">
             </a>
 
         </section>
 
-        <a href="/index.html">
-            <img src="images/instalogo.png" alt="wereldbol" width="50" length="50">
+        <a class="greytext" href="/index.html">
+            <img id="world" src="images/world.png" alt="world"> USA
         </a>
-        <p> © 2021 Spotify AB</p>
+        <p class="greytext"> © 2021 Spotify AB</p>
 
+
+        <!-- tweede footer met linkjes -->
         <section id="secondaryfooter">
 
             <ul>
@@ -201,6 +203,8 @@
 
 
     </footer>
-
+    <!-- link naar JavaScript -->
     <script src="scripts/script.js"></script>
-</body></html>
+</body>
+
+</html>
