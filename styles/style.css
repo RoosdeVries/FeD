@@ -7,7 +7,7 @@
 
 /* Spotify font –– nog inladen in de Spotify Map + backup font !! */
 html {
-    font-family: Proxima Nova;
+    font-family: Proxima Nova, Helvetica;
 }
 
 /* zorgt ervoor dat alle content vrijstaand en 'leeg' is */
