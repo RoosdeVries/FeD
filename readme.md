@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+Roos de Vries – 500807652
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -62,23 +62,25 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
--uitwerken voor de 1e werkgroep - eind van de eerste week-
+
+Ik had nog nooit eerder van een deze methode gehoord, maar vond dit super fijn. Ik kreeg echt het idee het allemaal wel mee valt, qua hoe veelheid, omdat alles mooi in hokjes geplaatst kon worden.
+
+<img src="images/Breakdownschets.png" alt="breakdownshets">
 
 
 
 ## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
+Aangezien ik nog niet veel ervaring heb met coderen ga ik voor de blauwe piste
 
-**Je startniveau:** -kies uit zwart, rood óf blauw-
+Startniveau – Blauw
 
-**Je focus:** -kies uit responsive óf surface plane-
+Ik vind responsives op websites altijd erg belangrijk want ik werk vaak met 2 of 3 schermen naast/onder elkaar. 
+Hierdoor kies ik voor de responsive kan van de opdracht, maar ik wil ook meer te weten komen over CSS, en hoe ik het kan toepassen.
 
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+Gekozen website – Spotify.com
 
-**Screenshot(s) van de eerste pagina (small screen):**
+Eerste pagina – mobile screen
+<img src="images/smallscreen.png" alt="smallscreen">
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
-
-**Screenshot(s) van de tweede pagina (small screen):**
-
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+Detailpagine – mobile screen
+<img src="images/detailpage.png" width="375px" alt="detailpage">

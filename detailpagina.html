@@ -33,22 +33,23 @@
         </nav>
 
         <section id="dropdownmenu">
-            <ul>
-                <li value="account">Account overview</li>
-                <li value="plans">Availabe Plans</li>
-                <li value="profile">Edit Profile</li>
-                <li value="password">Change Password</li>
-                <li value="notifications">Notification Settings</li>
-                <li value="privacy">Privacy Settings</li>
-                <li value="playlists">Recover Playlists</li>
-                <li value="receipts">Receipts</li>
-                <li value="apps">Apps</li>
-                <li value="redeem">Redeem</li>
-            </ul>
+
+            <select name="dropdown" id="dropdown">
+                <option src="images/world.png" value="account">Account overview</option>
+                <option src="images/world.png" value="plans">Availabe Plans</option>
+                <option src="images/world.png" value="profile">Edit Profile</option>
+                <option src="images/world.png" value="password">Change Password</option>
+                <option src="images/world.png" value="notifications">Notification Settings</option>
+                <option src="images/world.png" value="privacy">Privacy Settings</option>
+                <option src="images/world.png" value="receipts">Receipts</option>
+                <option src="images/world.png" value="apps">Apps</option>
+                <option src="images/world.png" value="redeem">Redeem</option>
+            </select>
+
         </section>
 
         <h1 id="greetingdetailpage"> Hello!</h1>
-        <p> Want to edit your profile? Find an old playlist? Put off work for a while? You can do it all here.</p>
+        <p id="cta"> Want to edit your profile? Find an old playlist? Put off work for a while? You can do it all here.</p>
         <img id="iphone" src="images/iphone.png" alt="iphone">
 
         <!-- Add Iphone image –– already in background image? -->
@@ -142,7 +143,45 @@
             </ul>
         </section>
 
+        <section id="socials">
+
+            <a class="socialicons" href="/index.html">
+                <img id="instagram" alt="Insta logo" src="./images/instagram.png">
+            </a>
+            <a class="socialicons" href="/index.html">
+                <img id="twitter" alt="Twitter logo" src="./images/twitter.png">
+            </a>
+            <a class="socialicons" href="/index.html">
+                <img id="facebook" alt="Facebook" src="./images/facebook.png">
+            </a>
+
+        </section>
+
+        <section id="outlineright">
+            <a class="greytext" href="/index.html">
+                <img id="world" src="images/world.png" alt="world"> USA
+            </a>
+            <p class="greytext"> © 2021 Spotify AB</p>
+        </section>
+
+        <!-- tweede footer met linkjes -->
+        <section id="secondaryfooter">
+
+            <ul>
+                <li> <a href="#"> Legal </a></li>
+                <li> <a href="#"> Privacy Center </a></li>
+                <li> <a href="#"> Privacy Policy </a></li>
+                <li> <a href="#"> Cookies </a></li>
+                <li> <a href="#"> About Ads </a></li>
+                <li> <a href="#"> Additional CA Privacy Disclosures </a></li>
+
+
+            </ul>
+
+        </section>
 
 
     </footer>
+    <!-- link naar JavaScript -->
+    <script src="scripts/script.js"></script>
 </body>

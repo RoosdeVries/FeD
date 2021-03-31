@@ -53,51 +53,50 @@
         <!-- Hamburger menu –– schuift uit, hierop moet een transition + deg [degrees] -->
 
         <h1> Looking for music? </h1>
-        <p> Start listening to the best new releases.</p>
+        <p id="calltoaction"> Start listening to the best new releases.</p>
 
-        <button> OPEN WEB PLAYER </button>
+        <button id="homebutton"> OPEN WEB PLAYER </button>
 
         <!-- De zes clickable muziekafspeellijsten -->
-        <!-- Images moeten nog in CSS aangepast worden -->
 
         <section id="playlists">
 
-            <article>
+            <article id="song1">
                 <a href="#"><img class="coverimage" alt="cover1" src="./images/1tameimpala.jpg"></a>
                 <a class="songname" href="#"> Borderline </a>
                 <a class="artist" href="#"> Tame Impala </a>
                 <a class="capitalized" href="#"> PLAY NOW </a>
             </article>
 
-            <article>
+            <article id="song2">
                 <a href="#"><img class="coverimage" alt="cover2" src="./images/2theneighbourhood.jpg"></a>
                 <a class="songname" href="#"> Stargazing </a>
                 <a class="artist" href="#"> The Neighbourhood </a>
                 <a class="capitalized" href="#"> PLAY NOW </a>
             </article>
 
-            <article>
+            <article id="song3">
                 <a href="#"><img class="coverimage" alt="cover3" src="./images/3chaseatlantic.jpg"></a>
                 <a class="songname" href="#"> Moonlight </a>
                 <a class="artist" href="#"> Chase Atlantic </a>
                 <a class="capitalized" href="#"> PLAY NOW </a>
             </article>
 
-            <article>
+            <article id="song4">
                 <a href="#"><img class="coverimage" alt="cover4" src="./images/4darci.jpg"></a>
                 <a class="songname" href="#"> Lights </a>
                 <a class="artist" href="#"> Darci </a>
                 <a class="capitalized" href="#"> PLAY NOW </a>
             </article>
 
-            <article>
+            <article id="song5">
                 <a href="#"><img class="coverimage" alt="cover5" src="./images/5azealiabanks.jpg"></a>
                 <a class="songname" href="#"> Count Contessa </a>
                 <a class="artist" href="#"> Azealia Banks </a>
                 <a class="capitalized" href="#"> PLAY NOW </a>
             </article>
 
-            <article>
+            <article id="song6">
                 <a href="#"><img class="coverimage" alt="cover6" src="./images/6ozzie.jpg"></a>
                 <a class="songname" href="#"> DHYB </a>
                 <a class="artist" href="#"> OZZIE </a>
@@ -115,18 +114,23 @@
 
         <h2> Make the most out of Spotify</h2>
 
-        <h3> Manage your account</h3>
-        <p> Edit your profile, change your password and update your payment information </p>
-        <a class="capitalized" href="#"> MANAGE ACCOUNT</a>
+        <section id="manageaccount">
+            <h3> Manage your account</h3>
+            <p> Edit your profile, change your password and update your payment information </p>
+            <a class="capitalized" href="#"> MANAGE ACCOUNT</a>
+        </section>
 
+        <section id="app">
+            <h3> Get our free app</h3>
+            <p> Seamlessly listen to music you love. Download the Spotify app for your computer.</p>
+            <a class="capitalized" href="#"> DOWNLOAD DESKTOP APP</a>
+        </section>
 
-        <h3> Get our free app</h3>
-        <p> Seamlessly listen to music you love. Download the Spotify app for your computer.</p>
-        <a class="capitalized" href="#"> DOWNLOAD DESKTOP APP</a>
-
-        <h3> Listen on the web</h3>
-        <p> To play and share music without the app, all within your browser, go to <a href="http://play.spotify.com/"> play.spotify.com </a></p>
-        <a class="capitalized" href="#"> OPEN WEB PLAYER </a>
+        <section id="webplayer">
+            <h3> Listen on the web</h3>
+            <p> To play and share music without the app, all within your browser, go to play.spotify.com </p>
+            <a class="capitalized" href="#"> OPEN WEB PLAYER </a>
+        </section>
 
     </main>
 
@@ -137,32 +141,35 @@
     <footer>
         <img id="footerlogo" alt="Spotify logo" src="./images/spotifyLOGO.png">
 
-        <section id="company">
-            <h3> COMPANY </h3>
-            <ul>
-                <li> <a href="#"> About </a></li>
-                <li> <a href="#"> Jobs </a></li>
-                <li> <a href="#"> For the Record </a></li>
-            </ul>
-        </section>
+        <section id="footerlinks">
+            <section id="company">
+                <h3> COMPANY </h3>
+                <ul>
+                    <li> <a href="#"> About </a></li>
+                    <li> <a href="#"> Jobs </a></li>
+                    <li> <a href="#"> For the Record </a></li>
+                </ul>
+            </section>
 
 
-        <section id="communities">
-            <h3> COMMUNITIES </h3>
-            <ul>
-                <li> <a href="#"> For Artists </a></li>
-                <li> <a href="#"> Investors </a></li>
-                <li> <a href="#"> Vendors </a></li>
-            </ul>
-        </section>
+            <section id="communities">
+                <h3> COMMUNITIES </h3>
+                <ul>
+                    <li> <a href="#"> For Artists </a></li>
+                    <li> <a href="#"> Investors </a></li>
+                    <li> <a href="#"> Vendors </a></li>
+                </ul>
+            </section>
 
-        <section id="usefullinks">
-            <h3> USEFUL LINKS </h3>
-            <ul>
-                <li> <a href="#"> Support </a></li>
-                <li> <a href="#"> Web Player </a></li>
-                <li> <a href="#"> Free Mobile App </a></li>
-            </ul>
+            <section id="usefullinks">
+                <h3> USEFUL LINKS </h3>
+                <ul>
+                    <li> <a href="#"> Support </a></li>
+                    <li> <a href="#"> Web Player </a></li>
+                    <li> <a href="#"> Free Mobile App </a></li>
+                </ul>
+            </section>
+
         </section>
 
         <section id="socials">
@@ -179,11 +186,12 @@
 
         </section>
 
-        <a class="greytext" href="/index.html">
-            <img id="world" src="images/world.png" alt="world"> USA
-        </a>
-        <p class="greytext"> © 2021 Spotify AB</p>
-
+        <section id="outlineright">
+            <a class="greytext" href="/index.html">
+                <img id="world" src="images/world.png" alt="world"> USA
+            </a>
+            <p class="greytext"> © 2021 Spotify AB</p>
+        </section>
 
         <!-- tweede footer met linkjes -->
         <section id="secondaryfooter">

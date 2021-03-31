@@ -29,30 +29,23 @@ footer {
 
 /* voegt background gradient toe en centreerd de items */
 header {
-    background: linear-gradient(#AE6FA9, #020403);
+    background: linear-gradient(#AE6FA9, #6E5A7F, #020403);
     display: grid;
     justify-items: center;
 }
 
-/* juiste grootte & dikte */
 h1 {
     font-size: 3em;
     font-weight: 750;
+    margin-top: 2.5em;
+    margin-bottom: 0em;
 }
 
-/* alleen de eerste willen aanspreken –– lukt niet 
-p:nth-of-type(1) {
-    font-weight: 700;
-}
-*/
-
-/* juiste grootte & dikte */
 h2 {
     font-size: 2em;
     font-weight: 800;
 }
 
-/* juiste grootte & dikte */
 h3 {
     font-size: 1.3em;
     font-weight: 800;
@@ -63,7 +56,7 @@ li {
     list-style: none;
 }
 
-/*  */
+/* naast elkaar / space between = links & rechts */
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -76,6 +69,7 @@ nav {
     display: flex;
     background-color: black;
     width: 100%;
+    position: fixed;
 }
 
 /* schaalt afbeeldingen en geeft ruimte aan de elementen */
@@ -91,15 +85,27 @@ a {
     color: currentColor;
 }
 
+/* first P on the page */
+#calltoaction {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
 /* call to action button homepage + styling buttons detailpagina */
-button {
+#homebutton {
     background-color: #1DB954;
     color: white;
+
     border-radius: 3em;
     border-style: none;
-    padding: 1.5em 5em;
+
+    font-weight: 800;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+
     display: flex;
-    font-weight: 700;
+    margin-top: 2em;
+    padding: 1.3em 3.5em;
 }
 
 /* styling button wanneer je er overheen hovert */
@@ -144,19 +150,46 @@ main {
     color: black;
 }
 
-/* groene hoofdletter teksten */
-.capitalized {
+/* groene hoofdletter tekst, alleen vanuit de article */
+article .capitalized {
     color: #1DB954;
     font-weight: 700;
+    font-size: 0.8em;
+
     letter-spacing: 0.2em;
     padding-top: 0.8em;
+}
+
+/* groene hoofdletter tekst, alleen vanuit de article, margin-top toevoegen, werkt niet!? */
+main .capitalized {
+    color: #1DB954;
+    font-weight: 700;
     font-size: 0.8em;
+    letter-spacing: 0.2em;
 }
 
 /* de content van de kantlijn afhalen */
 main,
 footer {
     padding: 1em;
+}
+
+main {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+main p {
+    margin-bottom: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+#manageaccount,
+#app,
+#webplayer,
+.capitalized {
+    margin-top: 1em;
 }
 
 /* FOOTER */
@@ -191,54 +224,67 @@ footer li:hover {
 }
 
 /* Creeërt 'wit' ruimte */
-#socials {
-    margin-top: 7em;
-}
-
-.socialicons {
-    width: 2em;
-    height: 2em;
-}
-
-#communities {
-    margin-top: 4em;
-}
-
+#communities,
 #usefullinks {
     margin-top: 4em;
 }
-
-/* images met hover een andere image laten zien –– werkt niet 
-#instagram:hover {
-    background-image: url("instagramgreen.png");
-}
-
-#twitter:hover {
-    background-image: url("twittergreen.png");
-}
-
-#facebook:hover {
-    background-image: url("facebookgreen.png");
-}
-
-*/
 
 #world {
     width: 1em;
     height: 1em;
 }
 
+/* Creeërt 'wit' ruimte */
+#socials {
+    margin-top: 7em;
+    margin-bottom: 2em;
+}
+
+.socialicons img {
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0.3em;
+}
+
+
+#outlineright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#outlineright a {
+    margin-bottom: 1em;
+}
+
+/* selectief tekst grijs maken */
 .greytext {
     color: grey;
     font-weight: 600;
     font-size: 0.7em;
 }
 
+/*SECONDARY FOOTER*/
 #secondaryfooter a {
-    font-weight: 400;
+    font-weight: 550;
     font-size: 0.7em;
     color: grey;
 }
+
+#secondaryfooter a:hover {
+    color: #1ED761;
+}
+
+#secondaryfooter p {
+    margin-right: 0em;
+}
+
+/* zorgen dat de secondary footer in 2 word gesplitst */
+#secondaryfooter ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 
 /* DETAILPAGINA SPECIFIEK –– Personal Account */
@@ -249,11 +295,36 @@ footer li:hover {
     background: linear-gradient(#121D3D, #000000)
 }
 
+#cta {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+/*dropdownmenu + icons*/
+#dropdownmenu {}
+
+
+#dropdown {
+    display: flex;
+    justify-content: space-between;
+    width: 33em;
+    margin-top: 7em;
+    padding: 1em;
+}
+
+option {}
+
+
 /*formulier detailpagina*/
 .whitebutton {
     background-color: white;
     border-style: solid;
     color: grey;
+    border-radius: 3em;
+    padding: 1.5em 5em;
+    font-weight: 700;
 }
 
 
@@ -282,3 +353,36 @@ textarea {
     height: 25em;
     width: 22em;
 }
+
+
+/* MEDIA QUERIES */
+
+/* normal ipad size */
+@media (min-width: 49em) {
+
+    #calltoaction {
+        font-weight: 750;
+        font-size: 1.5em;
+    }
+
+    #playlists {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 1.4em;
+    }
+
+    #playlists img {
+        width: 14em;
+        height: 14em;
+    }
+
+    #footerlinks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+
+    /* macbook sized */
+    @media (min-width: 62em) {}
