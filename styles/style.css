@@ -5,10 +5,13 @@
     box-sizing: border-box;
 }
 
-/* Spotify font –– nog inladen in de Spotify Map + backup font !! */
+/* Spotify font */
 html {
     font-family: Proxima Nova, Helvetica;
 }
+
+/* Proxima Nova via Adobe Typekit  */
+@import url("https://use.typekit.net/kxq4kha.css");
 
 /* zorgt ervoor dat alle content vrijstaand en 'leeg' is */
 body,
@@ -27,29 +30,7 @@ footer {
     color: white;
 }
 
-/* voegt background gradient toe en centreerd de items */
-header {
-    background: linear-gradient(#AE6FA9, #6E5A7F, #020403);
-    display: grid;
-    justify-items: center;
-}
-
-h1 {
-    font-size: 3em;
-    font-weight: 750;
-    margin-top: 2.5em;
-    margin-bottom: 0em;
-}
-
-h2 {
-    font-size: 2em;
-    font-weight: 800;
-}
-
-h3 {
-    font-size: 1.3em;
-    font-weight: 800;
-}
+/* NAVIGATIE */
 
 /* haalt ingebouwde text decoratie weg */
 li {
@@ -83,6 +64,20 @@ nav img {
 a {
     text-decoration: none;
     color: currentColor;
+}
+
+/* voegt background gradient toe en centreerd de items */
+header {
+    background: linear-gradient(#AE6FA9, #6E5A7F, #020403);
+    display: grid;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 750;
+    margin-top: 2.5em;
+    margin-bottom: 0em;
 }
 
 /* first P on the page */
@@ -123,7 +118,7 @@ button:hover {
     max-width: 100%;
 }
 
-/*  */
+/* de 'boxes' [text + image] als een grid vormen + ruimte hiertussen creeëren */
 #playlists article {
     display: grid;
     grid-gap: 0.5em;
@@ -144,6 +139,27 @@ button:hover {
     color: #C2C2C2;
 }
 
+/* micro animatie shape alvast in de css zetten - maar nog niet zichbaar maken*/
+#microanimation {
+    width: 0em;
+    height: 0em;
+    visibility: hidden;
+}
+
+
+
+h2 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+
+
 /* geeft 1/3 de juiste achtergrond en tekst - kleur  */
 main {
     background-color: white;
@@ -160,7 +176,7 @@ article .capitalized {
     padding-top: 0.8em;
 }
 
-/* groene hoofdletter tekst, alleen vanuit de article, margin-top toevoegen, werkt niet!? */
+/* groene hoofdletter tekst, alleen vanuit de article */
 main .capitalized {
     color: #1DB954;
     font-weight: 700;
@@ -168,7 +184,7 @@ main .capitalized {
     letter-spacing: 0.2em;
 }
 
-/* de content van de kantlijn afhalen */
+/* b/o/r/l ruimte maken */
 main,
 footer {
     padding: 1em;
@@ -295,63 +311,137 @@ footer li:hover {
     background: linear-gradient(#121D3D, #000000)
 }
 
+/* h1 op de detailpagina */
+#greetingdetailpage {
+    font-size: 1.9em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+/* call to action op de detailpagina */
 #cta {
     text-align: center;
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
-
-/*dropdownmenu + icons*/
-#dropdownmenu {}
-
-
+/* <select> styling */
 #dropdown {
     display: flex;
     justify-content: space-between;
-    width: 33em;
+
+    font-weight: 500;
+
+    width: 35em;
     margin-top: 7em;
     padding: 1em;
+    border-radius: 0.5em;
 }
-
-option {}
-
-
-/*formulier detailpagina*/
-.whitebutton {
-    background-color: white;
-    border-style: solid;
-    color: grey;
-    border-radius: 3em;
-    padding: 1.5em 5em;
-    font-weight: 700;
-}
-
-
-/* styling buttons wanneer je er overheen hovert + zoomt in */
-.whitebutton:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.05, 1.05);
-}
-
-form {}
-
-label {
-    color: lightgray;
-}
-
-input,
-textarea {
-    background-color: white;
-    border-style: none;
-}
-
 
 /* Iphone afbeelding grootte  */
 #iphone {
     height: 25em;
     width: 22em;
+}
+
+/* tabel styling - hoe werkt dit? column & rows omwisselen? */
+/*table {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr
+}*/
+
+
+/*button detailpagina*/
+.detailbutton {
+    background-color: white;
+    color: grey;
+    font-weight: 700;
+
+    border-style: solid;
+    border-radius: 3em;
+
+    width: 33em;
+    padding: 1.5em 5em;
+
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+/* styling buttons wanneer je er overheen hovert + zoomt in */
+.detailbutton:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05, 1.05);
+    border-color: black;
+}
+
+/* ruimte maken voor micro-interactie*/
+#countdown {
+    margin-top: 7em;
+}
+
+#yourplaninfo {
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: darkgrey;
+}
+
+#premiuminfo {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    margin-top: 0em;
+
+    background-color: #121D3D;
+    color: white;
+
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
+}
+
+#idealimg {
+    height: 2em;
+    width: 2.3em;
+    margin-left: 1em;
+}
+
+
+/* rechts ruimte geven */
+#yourplan p,
+#yourplan a,
+#payment {
+    margin-left: 1em;
+}
+
+/* break line - ik kon geen andere manier bedenken */
+#payment {
+    border-style: solid;
+    width: 25em;
+    border-top-width: thin;
+    border-color: lightgrey;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 2em;
+}
+
+
+#studentdiscount {
+    padding-bottom: 4em;
+}
+
+
+/* speciale tekst box */
+#notebox {
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: darkgrey;
+    border-radius: 0.2em;
+
+    padding: 1.5em;
+
+    background-color: whitesmoke;
 }
 
 
@@ -365,24 +455,131 @@ textarea {
         font-size: 1.5em;
     }
 
+
+    /* afbeeldingen juist naast elkaar en de tekst weghalen */
     #playlists {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-row-gap: 1.4em;
+
+        overflow-x: hidden;
     }
 
     #playlists img {
-        width: 14em;
-        height: 14em;
+        width: 13em;
+        height: 13em;
     }
+
+    #playlists {
+        visibility: hidden;
+    }
+
+    #playlists img {
+        visibility: visible;
+    }
+
+    .bottomrow {
+        margin-top: -6.5em;
+    }
+
+
+    #manageaccount,
+    #app,
+    #webplayer {
+        width: 20em;
+        height: 10em;
+    }
+
+    #microanimation {
+        width: 2.5em;
+        height: 2.5em;
+        margin-top: -13em;
+
+        align-items: center;
+        visibility: visible;
+    }
+
+    header {
+        margin-bottom: -10em;
+    }
+
+
+
+    /* micro animatie */
+    @keyframes movingArrow {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-0.5em);
+        }
+    }
+
+    #microanimation {
+        animation-name: movingArrow;
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+
+    #microanimation h2 {
+        margin-bottom: 2em;
+    }
+
+    #app {
+        margin-top: -11.5em;
+        margin-left: 25em;
+    }
+
 
     #footerlinks {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+}
 
 
-    /* macbook sized */
-    @media (min-width: 62em) {}
+/* macbook mini sized */
+@media (min-width: 65em) {
+    nav {
+        opacity: 75%;
+    }
+
+    #webplayer {
+        margin-top: -12em;
+        margin-left: 48em;
+    }
+}
+
+
+/* macbook normal sized */
+@media (min-width: 80em) {
+    h2 {
+        font-size: 3em;
+        margin-left: 3em;
+    }
+
+    #manageaccount {
+        margin-left: 9em;
+    }
+
+    #app {
+        margin-top: -12em;
+        margin-left: 35em;
+    }
+
+    #webplayer {
+        margin-top: -12em;
+        margin-left: 60em;
+    }
+
+    main h3 {
+        font-weight: 800;
+        font-size: 1.8em;
+    }
+
+}

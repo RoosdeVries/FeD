@@ -6,7 +6,7 @@
     <meta name="author" content="Roos de Vries">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Account overview</title>
+    <title> Account overview </title>
 
     <link href="styles/style.css" rel="stylesheet">
 </head>
@@ -17,15 +17,15 @@
         <nav>
             <ul>
                 <li>
-                    <a href="/index.html">
+                    <a href="index.html">
                         <img alt="Spotify logo" src="./images/spotifyLOGO.png">
                     </a>
                 </li>
                 <li>
-                    <a href="/detailpagina.html">
+                    <a href="detailpagina.html">
                         <img alt="Profile pic" src="./images/whiteprofilepic.png">
                     </a>
-                    <a href="/index.html">
+                    <a href="index.html">
                         <img alt="Menu" src="./images/menu.png">
                     </a>
                 </li>
@@ -34,16 +34,18 @@
 
         <section id="dropdownmenu">
 
+            <!-- Geprobeerd de iconen er aan toe te voegen dmv: data-icon, maar vereist JavaScript -->
             <select name="dropdown" id="dropdown">
-                <option src="images/world.png" value="account">Account overview</option>
-                <option src="images/world.png" value="plans">Availabe Plans</option>
-                <option src="images/world.png" value="profile">Edit Profile</option>
-                <option src="images/world.png" value="password">Change Password</option>
-                <option src="images/world.png" value="notifications">Notification Settings</option>
-                <option src="images/world.png" value="privacy">Privacy Settings</option>
-                <option src="images/world.png" value="receipts">Receipts</option>
-                <option src="images/world.png" value="apps">Apps</option>
-                <option src="images/world.png" value="redeem">Redeem</option>
+
+                <option data-icon="images/world.png" value="account">Account Overview</option>
+                <option data-icon="images/world.png" value="plans">Availabe Plans</option>
+                <option data-icon="images/world.png" value="profile">Edit Profile</option>
+                <option data-icon="images/world.png" value="password">Change Password</option>
+                <option data-icon="images/world.png" value="notifications">Notification Settings</option>
+                <option data-icon="images/world.png" value="privacy">Privacy Settings</option>
+                <option data-icon="images/world.png" value="receipts">Receipts</option>
+                <option data-icon="images/world.png" value="apps">Apps</option>
+                <option data-icon="images/world.png" value="redeem">Redeem</option>
             </select>
 
         </section>
@@ -52,7 +54,6 @@
         <p id="cta"> Want to edit your profile? Find an old playlist? Put off work for a while? You can do it all here.</p>
         <img id="iphone" src="images/iphone.png" alt="iphone">
 
-        <!-- Add Iphone image –– already in background image? -->
 
     </header>
 
@@ -63,20 +64,26 @@
         <section id="profile">
             <h3> Profile </h3>
 
-            <form>
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" value="roos.devries0411"><br>
+            <table id="personalinfo">
+                <thead>
+                    <tr>
+                        <th> Username </th>
+                        <th> Email </th>
+                        <th> Date of birth </th>
+                        <th> Country or region </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> roosdevries </td>
+                        <td> roos.devries0411@gmail.com</td>
+                        <td> November 4, 2000</td>
+                        <td> Netherlands</td>
 
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" value="roos.devries0411@gmail.com"><br>
-
-                <label for="dateofbirth">Date of birth</label>
-                <input type="text" id="dateofbirth" name="dateofbirth" value="November 4, 2000"><br>
-
-                <label for="country">Country or region</label>
-                <input type="text" id="country" name="country" value="Netherlands"><br>
-                <button class="whitebutton"> EDIT PROFILE</button>
-            </form>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="detailbutton"> EDIT PROFILE</button>
 
         </section>
 
@@ -84,14 +91,27 @@
         <section id="yourplan">
 
             <h3> Your plan</h3>
-            <h4> Premium for students</h4>
-            <p> All the Premium benefits, at a special price for students in college or university.</p>
-            <a class="capitalized" href="#"> LEARN MORE </a>
-            <h5> Payment</h5>
-            <p> Your next bill is for €4,99 on 3/8/2021</p>
-            <img alt="Ideal logo" src="./images/idealogo.png" width="50" height="50">
-            <button class="whitebutton"> CHANGE PLAN </button>
-            <a class="capitalized" href="#"> UPDATE </a>
+
+            <article id="yourplaninfo">
+
+                <h4 id="premiuminfo"> Premium for Students</h4>
+
+                <p> All the Premium benefits, at a special price for students in college or university.</p>
+                <a class="capitalized" href="#"> LEARN MORE </a>
+
+                <h4 id="payment"> Payment </h4>
+                <p> Your next bill is for €4,99 on 25/4/2021</p>
+                <p> Time until next payment : </p>
+                <p id="countdown"> </p>
+
+                <img id="idealimg" alt="Ideal logo" src="/images/idealogo.png">
+
+                <a class="capitalized" href="#"> UPDATE </a>
+
+            </article>
+
+            <button class="detailbutton"> CHANGE PLAN </button>
+
 
         </section>
 
@@ -106,41 +126,44 @@
 
             <h3> Sign out everywhere </h3>
             <p> Sign out wherever you have Spotify open, including the web, mobile, desktop or any other devices. </p>
-            <p> Note: This doens't include partner devices, such as Sonos and PlayStation. For more information about logging out or unliking, Spotify from a partner device, check the device's manufacturer guide.</p>
-            <button class="whitebutton"> CHANGE PROFILE </button>
+
+            <p id="notebox"> Note: This doens't include partner devices, such as Sonos and PlayStation. For more information about logging out or unliking, Spotify from a partner device, check the device's manufacturer guide.</p>
+            <button class="detailbutton"> CHANGE PROFILE </button>
 
         </section>
     </main>
     <footer>
+        <img id="footerlogo" alt="Spotify logo" src="./images/spotifyLOGO.png">
 
-        <img alt="Spotify logo" src="./images/spotifyLOGO.png" width="130" height="40">
+        <section id="footerlinks">
+            <section id="company">
+                <h3> COMPANY </h3>
+                <ul>
+                    <li> <a href="#"> About </a></li>
+                    <li> <a href="#"> Jobs </a></li>
+                    <li> <a href="#"> For the Record </a></li>
+                </ul>
+            </section>
 
-        <section id="company">
-            <h3> COMPANY </h3>
-            <ul>
-                <li> <a href="#"> About </a></li>
-                <li> <a href="#"> Jobs </a></li>
-                <li> <a href="#"> For the Record </a></li>
-            </ul>
-        </section>
 
+            <section id="communities">
+                <h3> COMMUNITIES </h3>
+                <ul>
+                    <li> <a href="#"> For Artists </a></li>
+                    <li> <a href="#"> Investors </a></li>
+                    <li> <a href="#"> Vendors </a></li>
+                </ul>
+            </section>
 
-        <section id="communities">
-            <h3> COMMUNITIES </h3>
-            <ul>
-                <li> <a href="#"> For Artists </a></li>
-                <li> <a href="#"> Investors </a></li>
-                <li> <a href="#"> Vendors </a></li>
-            </ul>
-        </section>
+            <section id="usefullinks">
+                <h3> USEFUL LINKS </h3>
+                <ul>
+                    <li> <a href="#"> Support </a></li>
+                    <li> <a href="#"> Web Player </a></li>
+                    <li> <a href="#"> Free Mobile App </a></li>
+                </ul>
+            </section>
 
-        <section id="usefullinks">
-            <h3> USEFUL LINKS </h3>
-            <ul>
-                <li> <a href="#"> Support </a></li>
-                <li> <a href="#"> Web Player </a></li>
-                <li> <a href="#"> Free Mobile App </a></li>
-            </ul>
         </section>
 
         <section id="socials">
@@ -158,10 +181,12 @@
         </section>
 
         <section id="outlineright">
+
             <a class="greytext" href="/index.html">
                 <img id="world" src="images/world.png" alt="world"> USA
             </a>
             <p class="greytext"> © 2021 Spotify AB</p>
+
         </section>
 
         <!-- tweede footer met linkjes -->
@@ -182,6 +207,5 @@
 
 
     </footer>
-    <!-- link naar JavaScript -->
-    <script src="scripts/script.js"></script>
+    <script src="scripts/countdown.js"></script>
 </body>
