@@ -14,6 +14,8 @@
 
 <body class="detail-page">
     <header>
+
+        <!-- Navigatie van de website, gemaakt met afbeeldingen -->
         <nav>
             <ul>
                 <li>
@@ -32,6 +34,7 @@
             </ul>
         </nav>
 
+        <!-- Dropdownmenu – gemaakt met select -->
         <section id="dropdownmenu">
 
             <!-- Geprobeerd de iconen er aan toe te voegen dmv: data-icon, maar vereist JavaScript -->
@@ -50,12 +53,14 @@
 
         </section>
 
+        <!-- Content startscreen detailpage -->
         <h1 id="greetingdetailpage"> Hello!</h1>
         <p id="cta"> Want to edit your profile? Find an old playlist? Put off work for a while? You can do it all here.</p>
         <img id="iphone" src="images/iphone.png" alt="iphone">
 
 
     </header>
+
 
     <!-- white background -->
     <main>
@@ -64,6 +69,7 @@
         <section id="profile">
             <h3> Profile </h3>
 
+            <!-- Ik had hier eerst een <form> maar kwam er later achter dat de content niet aangepast kan worden - hierdoor heb ik er een tabel van gemaakt, is alleen niet echt gebruikelijk.  -->
             <table id="personalinfo">
                 <thead>
                     <tr>
@@ -102,7 +108,7 @@
                 <h4 id="payment"> Payment </h4>
                 <p> Your next bill is for €4,99 on 25/4/2021</p>
                 <p> Time until next payment : </p>
-                <p id="countdown"> </p>
+                <p id="countdownpayment"> </p>
 
                 <img id="idealimg" alt="Ideal logo" src="images/idealogo.png">
 
@@ -119,6 +125,8 @@
 
             <h3> Student discount</h3>
             <p> Your student discount is valid until 7/7/21. We will send you an email when it's time to confirm that you're still a student.</p>
+            <p> Time until student discount ends : </p>
+            <p id="countdowndiscount"> </p>
 
         </section>
 

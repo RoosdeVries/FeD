@@ -26,8 +26,8 @@ li {
 /* zorgt ervoor dat 2/3 van de site een zwarte achtergrond heeft */
 header,
 footer {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /* NAVIGATIE */
@@ -48,7 +48,7 @@ nav ul {
 /* zorgt ervoor dat de elementen 100% van het beeld gebruiken + dat ze naast elkaar komen te staan */
 nav {
     display: flex;
-    background-color: black;
+    background-color: #000000;
     width: 100%;
     position: fixed;
 }
@@ -148,6 +148,7 @@ button:hover {
 
 
 
+
 h2 {
     font-size: 2em;
     font-weight: 800;
@@ -158,13 +159,14 @@ h3 {
     font-weight: 800;
 }
 
-
-
 /* geeft 1/3 de juiste achtergrond en tekst - kleur  */
 main {
     background-color: white;
     color: black;
 }
+
+
+
 
 /* groene hoofdletter tekst, alleen vanuit de article */
 article .capitalized {
@@ -207,6 +209,10 @@ main p {
 .capitalized {
     margin-top: 1em;
 }
+
+
+
+
 
 /* FOOTER */
 
@@ -303,7 +309,8 @@ footer li:hover {
 
 
 
-/* DETAILPAGINA SPECIFIEK –– Personal Account */
+
+/* DETAILPAGINA –– Personal Account */
 
 
 /* HEADER OP TWEEDE PAGINA –– background gradient */
@@ -376,15 +383,10 @@ footer li:hover {
     border-color: black;
 }
 
-/* ruimte maken voor micro-interactie*/
-#countdown {
-    margin-top: 7em;
-}
-
 #yourplaninfo {
     border-style: solid;
     border-width: 0.1em;
-    border-color: darkgrey;
+    border-color: #A9A9A9;
 }
 
 #premiuminfo {
@@ -393,7 +395,7 @@ footer li:hover {
     margin-top: 0em;
 
     background-color: #121D3D;
-    color: white;
+    color: #ffffff;
 
     font-weight: 800;
     font-size: 2em;
@@ -419,11 +421,29 @@ footer li:hover {
     border-style: solid;
     width: 25em;
     border-top-width: thin;
-    border-color: lightgrey;
+    border-color: #d3d3d3;
     border-bottom: none;
     border-left: none;
     border-right: none;
     padding-top: 2em;
+}
+
+/* ruimte maken voor eerste micro-interactie - countdown tot volgende betaling*/
+#countdownpayment {
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #121D3D;
+}
+
+#countdowndiscount {
+
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #1ED761;
+
+    border-style: dotted;
+    padding: 0.5em;
 }
 
 
@@ -436,12 +456,12 @@ footer li:hover {
 #notebox {
     border-style: solid;
     border-width: 0.1em;
-    border-color: darkgrey;
+    border-color: #A9A9A9;
     border-radius: 0.2em;
 
     padding: 1.5em;
 
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
 }
 
 
@@ -558,7 +578,7 @@ footer li:hover {
 
 /* macbook normal sized */
 @media (min-width: 80em) {
-    h2 {
+    #homepageh2 {
         font-size: 3em;
         margin-left: 3em;
     }
