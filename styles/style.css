@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* downloads Proxima Nova font */
+/* downloads Proxima Nova font - niet toegepast */
 
 @font-face {
     font-family: 'Metropolis Extra';
@@ -88,9 +88,12 @@
     font-display: swap;
 }
 
+
+
+
 /* Spotify font */
 html {
-    font-family: Proxima Nova, Helvetica;
+    font-family: Metropolis, Helvetica;
 }
 
 /* Proxima Nova via Adobe Typekit  */
@@ -562,7 +565,7 @@ footer li:hover {
     }
 
 
-    /* afbeeldingen juist naast elkaar en de tekst weghalen */
+    /* afbeeldingen juist naast elkaar, tekst weghalen en overflow balk weghalen */
     #playlists {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -597,6 +600,15 @@ footer li:hover {
         height: 10em;
     }
 
+
+
+    #headerhomepage {
+        margin-bottom: -10em;
+    }
+
+
+    /* micro animatie -  mbv code uit de les */
+
     #microanimation {
         width: 2.5em;
         height: 2.5em;
@@ -606,12 +618,7 @@ footer li:hover {
         visibility: visible;
     }
 
-    #headerhomepage {
-        margin-bottom: -10em;
-    }
-
-
-    /* micro animatie */
+    /* translateY zorgt ervoor dat een element van positie kan veranderen */
     @keyframes movingArrow {
         0% {
             transform: translateY(0);
@@ -622,6 +629,7 @@ footer li:hover {
         }
     }
 
+    /* alternate zorgt ervoor dat mijn animatie afwisselend afspeelt, infinte zorgt ervoor dat hij voor altijd blijft bewegen tussen de 0 & 100% states */
     #microanimation {
         animation-name: movingArrow;
         animation-duration: 1s;
@@ -676,12 +684,10 @@ footer li:hover {
 
     #cta {
         margin-top: 24em;
-        margin-left: -15.5em;
+        margin-left: -16.5em;
         margin-right: 9em;
         text-align: left;
     }
-
-
 
 }
 
@@ -724,5 +730,4 @@ footer li:hover {
         font-weight: 800;
         font-size: 1.8em;
     }
-
 }

@@ -6,31 +6,28 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
-
+1. https://www.youtube.com/watch?v=x7WJEmxNlEs –– tutorial - snapte ik niet goed dus niet afgemaakt
+2. https://www.w3schools.com/howto/howto_js_countdown.asp 
+3. Teams - Les 7 - animeren 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
-
-**Screenshot(s):**
-
--screenshot(s) van je eindresultaat-
+In deze week hebben Sophie en ik samen afgesproken en elkaar geholpen. 
+Uit een feedbackgesprek bleek dat we goed op weg waren. Ik moest vooral nog tijd steken in de styling en de microinteractie
 
 
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Html elementen waren bijna allemaal goedgekeurd - hierna was ik hiermee klaar.
 
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+In deze week begon ik het coderen veel leuker te vinden, omdat het begon te werken.
+Verdiept in grid & flex en achter veel nieuwe dingen gekomen die ik heb gebruikt in mijn code.
 
 
 
@@ -38,25 +35,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+In de eerste paar weken had ik nog niet super veel gedaan. Ik was begonnen met mijn eerste pagina html en een beetje styling. Tijdens de feedbackgesprekken kreeg ik een paar tips om mijn html semantisch correcter te maken - deze heb ik na de gespreken gelijk veranderd.
 
-**Screenshot(s):**
-
--screenshot(s) van hoe ver je bent met korte uitleg-
-
-### Agenda voor meeting
-
--samen met je groepje opstellen-
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
 
 
 

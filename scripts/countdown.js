@@ -55,7 +55,7 @@ var datum = setInterval(function () {
 
     var days = Math.floor(duur / (1000 * 60 * 60 * 24));
 
+    // zorgt ervoor dat de uitkomst van de rekensom in de html komt bij mijn aangegeven plek via een Id //
     document.getElementById("countdowndiscount").innerHTML = days + " days";
-
 
 }, 1000);
