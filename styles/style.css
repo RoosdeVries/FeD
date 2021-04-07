@@ -5,6 +5,89 @@
     box-sizing: border-box;
 }
 
+/* downloads Proxima Nova font */
+
+@font-face {
+    font-family: 'Metropolis Extra';
+    src: url('Metropolis-ExtraLight.woff2') format('woff2'),
+        url('Metropolis-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('Metropolis-Regular.woff2') format('woff2'),
+        url('Metropolis-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('Metropolis-Black.woff2') format('woff2'),
+        url('Metropolis-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('Metropolis-Light.woff2') format('woff2'),
+        url('Metropolis-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('Metropolis-Medium.woff2') format('woff2'),
+        url('Metropolis-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis Extra';
+    src: url('Metropolis-ExtraBold.woff2') format('woff2'),
+        url('Metropolis-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('Metropolis-Bold.woff2') format('woff2'),
+        url('Metropolis-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('Metropolis-Thin.woff2') format('woff2'),
+        url('Metropolis-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis Semi';
+    src: url('Metropolis-SemiBold.woff2') format('woff2'),
+        url('Metropolis-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Spotify font */
 html {
     font-family: Proxima Nova, Helvetica;
@@ -12,6 +95,9 @@ html {
 
 /* Proxima Nova via Adobe Typekit  */
 @import url("https://use.typekit.net/kxq4kha.css");
+
+
+
 
 /* zorgt ervoor dat alle content vrijstaand en 'leeg' is */
 body,
@@ -520,10 +606,9 @@ footer li:hover {
         visibility: visible;
     }
 
-    header {
+    #headerhomepage {
         margin-bottom: -10em;
     }
-
 
 
     /* micro animatie */
@@ -559,6 +644,44 @@ footer li:hover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+
+
+    /* detailpage */
+
+
+    #headerdetailpage {
+        display: flex;
+    }
+
+    #dropdownmenu {
+        visibility: hidden;
+    }
+
+    #iphone {
+        width: 16em;
+        height: 18em;
+        margin-top: 18em;
+        margin-right: 7em;
+
+    }
+
+    #greetingdetailpage {
+        font-size: 6em;
+        font-weight: 650;
+        margin-top: 2.5em;
+        margin-bottom: 2em;
+        margin-left: -4em;
+    }
+
+    #cta {
+        margin-top: 24em;
+        margin-left: -15.5em;
+        margin-right: 9em;
+        text-align: left;
+    }
+
+
 
 }
 
